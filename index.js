@@ -5,11 +5,6 @@ function validatePipeline(filePath) {
     const errors = [];
 
     try {
-        // Ensure the file name is sample-pipeline.yaml
-        // if (!filePath.endsWith('sample-pipelines.yaml')) {
-        //     return { valid: false, errors: ['The file name must be sample-pipeline.yaml'] };
-        // }
-
         // Read the YAML file
         const fileContent = fs.readFileSync(filePath, 'utf8');
         let pipeline;
@@ -71,7 +66,7 @@ function validatePipeline(filePath) {
             } else {
                 const triggers = Object.keys(onSection);
                 const validTriggersList = Object.keys(validTriggers);
-                
+
                 // Check for missing valid triggers
                 const hasValidTrigger = triggers.some(trigger => validTriggersList.includes(trigger));
                 if (!hasValidTrigger) {
@@ -84,13 +79,9 @@ function validatePipeline(filePath) {
                                     errors.push(`The "${trigger}" trigger should not be an array with content`);
                                 }
                             } else if (typeof properties !== 'object' || properties === null) {
-                                console.log(" This is trigger ", trigger)
-                                if(validTriggers[trigger]?.length>0)
-                                {
-                                    errors.push(`The "${trigger}" trigger must be an object, it can not be empty or null`);
+                                if (validTriggers[trigger]?.length > 0) {
+                                    errors.push(`The "${trigger}" trigger must be an object, it cannot be empty or null`);
                                 }
-                                // if(validTriggers[trigger].length)
-                                
                             } else {
                                 const validProperties = validTriggers[trigger];
                                 const propertyKeys = Object.keys(properties);
