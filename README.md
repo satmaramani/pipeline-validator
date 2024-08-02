@@ -52,6 +52,15 @@ jobs:
       - uses: actions/checkout@v3
 
 ```
+
+### Run the following command (Below command will run the validation code)
+
+```plaintext
+
+node pipeline-validator.js
+
+```
+
 # Screenshot If pipeline is valid 
 
 ![Correct Pipeline]( https://raw.githubusercontent.com/satmaramani/pipeline-validator/master/images/success1.png )
@@ -65,14 +74,11 @@ jobs:
 
 ![Wrong Pipeline]( https://raw.githubusercontent.com/satmaramani/pipeline-validator/master/images/fail2.png )
 
+# Screenshot If pipeline is invalid - Bad Indentaion of YAML 3
 
-### Run the following command (Below command will run the validation code)
+![Bad Indentation]( https://raw.githubusercontent.com/satmaramani/pipeline-validator/master/images/fail_indentation3.png )
 
-```plaintext
 
-node pipeline-validator.js
-
-```
 
 #### Invalid Pipeline 1 (missing push object element)
 
