@@ -52,7 +52,19 @@ jobs:
       - uses: actions/checkout@v3
 
 ```
+# Screenshot If pipeline is valid 
+
 ![Correct Pipeline]( https://raw.githubusercontent.com/satmaramani/pipeline-validator/master/images/success1.png )
+
+
+# Screenshot If pipeline is invalid - 1
+
+![Wrong Pipeline]( https://raw.githubusercontent.com/satmaramani/pipeline-validator/master/images/fail1.png )
+
+# Screenshot If pipeline is invalid - 2
+
+![Wrong Pipeline]( https://raw.githubusercontent.com/satmaramani/pipeline-validator/master/images/fail2.png )
+
 
 ### Run the following command (Below command will run the validation code)
 
