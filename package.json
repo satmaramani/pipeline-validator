@@ -1,0 +1,22 @@
+{
+  "name": "pipeline-validator",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pipeline",
+    "validator",
+    "github actions pipeline",
+    "pipeline validator",
+    "github actions workflow validator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0"
+  }
+}
