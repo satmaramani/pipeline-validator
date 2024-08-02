@@ -1,5 +1,5 @@
 
-# pipeline-validator
+# YAML Validator and Github actions pipeline validator
 
 Pipeline Validator is a robust YAML validation tool designed to ensure the correctness of your GitHub Actions pipeline configurations. It verifies that your pipeline files are named correctly, contain all required sections, and adhere to GitHub's schema for triggers and jobs. With detailed error reporting, it provides precise feedback on missing or invalid triggers, properties, and required sections. This package helps streamline CI/CD workflows by catching configuration issues early, ensuring your pipelines are well-formed and ready for execution. Enhance your development workflow with reliable, clear, and actionable validation insights.
 
@@ -120,17 +120,15 @@ jobs:
 
 ```
 
-#### Add a License
+# Proprietary License
 
-Create a `LICENSE` file with your chosen license. For example, the MIT License:
 
 ```plaintext
-MIT License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so
+All rights reserved.
 
+This software and its source code are the property of myself i.e. Sampurna Atmaramani. Unauthorized copying, modification, distribution, or use of this software, via any medium, is strictly prohibited. 
+
+For inquiries regarding the use of this software, please contact s.atmaramani@gmail.com 
+
+```
