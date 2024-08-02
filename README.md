@@ -5,13 +5,15 @@ Pipeline Validator is a robust YAML validation tool designed to ensure the corre
 
 
 
-## Installation
+## Installation of the package 
 
 ```bash
     npm install pipeline-validator
 ```
 
-#### Example Usage Code from client repo considering deeply-nested.yaml file below as a source yaml contents 
+#### create one javascript file ex. "pipeline-validator.js"
+
+#### Copy below example code in "pipeline-validator.js" file 
 
 ```plaintext
     
@@ -31,7 +33,10 @@ if (result.valid) {
 
 ```
 
-#### Valid Pipeline (sample-pipeline.yaml)
+
+# Valid Pipeline 
+
+#### Create pipeline file to check ("sample-pipeline.yaml")
 
 ```
 name: My Sample Pipeline
@@ -45,6 +50,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+```
+![Correct Pipeline]( https://raw.githubusercontent.com/satmaramani/pipeline-validator/master/images/success1.png )
+
+### Run the following command (Below command will run the validation code)
+
+```plaintext
+
+node pipeline-validator.js
 
 ```
 

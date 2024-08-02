@@ -1,8 +1,9 @@
-name: My Sample Invalid Pipeline
-description: This is Invalid pipeline description
+name: My Pipeline
+description: This is test pipeline
 on:
+  
   push:
-    branches: [main]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
