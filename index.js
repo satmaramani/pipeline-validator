@@ -114,9 +114,9 @@ function validatePipeline(filePath) {
         }
 
         // Validate description
-        if (!pipeline.hasOwnProperty('description')) {
-            errors.push('Missing required "description" section');
-        }
+        // if (!pipeline.hasOwnProperty('description')) {
+        //     errors.push('Missing required "description" section');
+        // }
 
         if (errors.length > 0) {
             return { valid: false, errors };
@@ -130,14 +130,14 @@ function validatePipeline(filePath) {
 }
 
 // Example usage
-const filePath = 'sample-pipeline.yaml';
-const result = validatePipeline(filePath);
+// const filePath = 'sample-pipeline.yaml';
+// const result = validatePipeline(filePath);
 
-if (result.valid) {
-    console.log(result.message);
-} else {
-    console.error('Validation failed with the following errors:');
-    result.errors.forEach((error, index) => console.error(`Error ${index + 1}: ${error}`));
-}
+// if (result.valid) {
+//     console.log(result.message);
+// } else {
+//     console.error('Validation failed with the following errors:');
+//     result.errors.forEach((error, index) => console.error(`Error ${index + 1}: ${error}`));
+// }
 
 module.exports = { validatePipeline };

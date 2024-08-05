@@ -1,6 +1,6 @@
 {
   "name": "pipeline-validator",
-  "version": "1.0.15",
+  "version": "1.0.19",
   "description": "A simple utility to validate the YAML and also validate github actions pipeline",
   "main": "index.js",
   "scripts": {

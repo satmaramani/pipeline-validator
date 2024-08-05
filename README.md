@@ -3,6 +3,9 @@
 
 Pipeline Validator is a robust YAML validation tool designed to ensure the correctness of your GitHub Actions pipeline configurations. It verifies that your pipeline files are named correctly, contain all required sections, and adhere to GitHub's schema for triggers and jobs. With detailed error reporting, it provides precise feedback on missing or invalid triggers, properties, and required sections. This package helps streamline CI/CD workflows by catching configuration issues early, ensuring your pipelines are well-formed and ready for execution. Enhance your development workflow with reliable, clear, and actionable validation insights.
 
+## Web Version validator
+
+https://web-pipeline-validator.s3.ap-south-1.amazonaws.com/index.html
 
 
 ## Installation of the package 
@@ -80,7 +83,7 @@ node pipeline-validator.js
 
 
 
-#### Invalid Pipeline 1 (missing push object element)
+#### Invalid Pipeline 1 (missing "push" object element)
 
 ```
 name: My Sample Invalid Pipeline
@@ -95,7 +98,7 @@ jobs:
 
 ```
 
-#### Invalid Pipeline 2 (missing on keyword)
+#### Invalid Pipeline 2 (missing "on" keyword)
 
 ```
 name: My Sample Invalid Pipeline
@@ -108,7 +111,7 @@ jobs:
 
 ```
 
-#### Invalid Pipeline 3 (missing description and on keywords)
+#### Invalid Pipeline 3 (missing "description" and "on" keywords)
 
 ```
 name: My Sample Invalid Pipeline
